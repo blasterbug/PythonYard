@@ -1,8 +1,12 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
+import os
+import sys
+
 def main(argv):
-    print_d("Finished shutdown.")
+    print("Finished shutdown.")
 
 
 if __name__ == "__main__":
-    main(util.argv)
+    main(sys.argv)
