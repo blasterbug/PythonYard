@@ -150,11 +150,9 @@
     "wrong",
     "yellow",
     "young"
-  ]
-}
+  ] ,
 
-{
-	"noums" : [
+  "noums" : [
 		"angle",
 		"ant",
 		"apple",
@@ -354,6 +352,6 @@
 		"window",
 		"wing",
 		"wire",
-		"worm",
+		"worm"
 	]
 }
