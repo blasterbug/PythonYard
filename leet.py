@@ -5,7 +5,7 @@
 # transform plin text to a sort of leet
 
 # macth a regular char to a 133t one
-def leetmatchor( char ) :
+def char2leet( char ) :
     return {
         ' ' : '',
         'a' : '4',
@@ -20,9 +20,31 @@ def leetmatchor( char ) :
         'z' : '2',
     }.get( char , char ) # default case
 
-# transforme a string to sort of 133t (leet)
+# undo a leet conversion
+def leet2char( char ) :
+    return {
+        '4' : 'a',
+        '6' : 'b',
+        '(' : 'c',
+        '3' : 'e',
+        '!' : 'i',
+        '1' : 'l',
+        '0' : 'o',
+        '5' : 's',
+        '7' : 't',
+        '2' : 'z',
+    }.get( char , char ) # default case
+
+# transform a string to sort of 133t (leet)
 def plain2leet( string ) :
     leetified = list( '' )
-    for char in string:
-        leetified.append( leetmatchor( char ) )
+    for char in string :
+        leetified.append( char2leet( char ) )
     return ''.join( leetified )
+
+# get a string from a leet one
+def leet2plain( string ) :
+    unleet = list()
+    for char in string :
+        unleet.append( leet2char( char ) )
+    return ''.join( unleet )
