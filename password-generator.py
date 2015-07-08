@@ -17,4 +17,4 @@ def main( argv ) :
 
 if __name__ == "__main__" :
     main( sys.argv )
-    print "consider use a uppercase letter to increase complexity"
+    print "Consider uppercase letters to increase complexity"
