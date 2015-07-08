@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# pick up two words and a json file and print them
+# pick up two words and a json file, print them and turn into a password
 
 import sys
 import json
@@ -14,13 +14,9 @@ def leetmatchor( char ) :
         'b' : '6',
         'c' : '(',
         'e' : '3',
-        'h' : 'h',
         'i' : '!',
         'l' : '1',
         'o' : '0',
-        'p' : 'p',
-        'q' : 'q',
-        'r' : 'r',
         's' : '5',
         't' : '7',
         'z' : '2',
