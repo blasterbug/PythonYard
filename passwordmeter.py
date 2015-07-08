@@ -3,6 +3,7 @@
 # Benjamin Sientzoff
 # 2015/7/08
 # Test and compute a password strength
+# TODO: detect redundant pattern
 
 import sys
 import string
