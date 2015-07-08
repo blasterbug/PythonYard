@@ -2,20 +2,20 @@
 # -*- coding: utf-8 -*-
 # Benjamin Sientzoff
 # 2015/7/08
-# Test and compute a password strenght
+# Test and compute a password strength
 
 import sys
 import string
 
 
-def compute_strenght( password ) :
+def compute_strength( password ) :
     alphaUP = 0
     alphaLO = 0
     number = 0
     repInc = 0
     repChar = 0
     lenghtP = len( password )
-    strenght = lenghtP * 4
+    strength = lenghtP * 4
     deb = 0
     comm = ''
     # check each char in password
@@ -36,19 +36,19 @@ def compute_strenght( password ) :
             repChar += 1
     # compute general point
     if ( alphaUP > 0 ) and ( alphaUP < lenghtP ) :
-        strenght += alphaUP + ( 2 * ( lenghtP - alphaUP ) )
+        strength += alphaUP + ( 2 * ( lenghtP - alphaUP ) )
     if ( alphaLO > 0 ) and ( alphaLO < lenghtP ) :
-        strenght += alphaLO + ( 2  * ( lenghtP - alphaLO ) )
+        strength += alphaLO + ( 2  * ( lenghtP - alphaLO ) )
     if ( number> 0 ) and ( number < lenghtP ) :
-        strenght += number + ( lenghtP - number )
+        strength += number + ( lenghtP - number )
     if repChar > 0 :
-        strenght -= repChar
-    if strenght > 100 :
+        strength -= repChar
+    if strength > 100 :
         return "100% - Good password"
-    elif strenght < 0 :
+    elif strength < 0 :
         return "0% - Weak password!"
-    return strenght.__str__()  + "%"
+    return strength.__str__()  + "%"
 
 
 if __name__ == "__main__" :
-    print compute_strenght( sys.argv[1] )
+    print compute_strength( sys.argv[1] )
