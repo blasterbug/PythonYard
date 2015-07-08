@@ -9,5 +9,5 @@ Python programs I am coding to practice.
  string usable as a password. The words used are stored in a JSON file (see next
  point).
  - `words.json` : Store words in two categories, descriptive ones and noums.
- - `leet.py` : module to play with a sort of leet (1337) language.
+ - `leet.py` : Module to play with a sort of leet (1337) language.
  - More fun to come...

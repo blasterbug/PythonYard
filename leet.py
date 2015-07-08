@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Benjamin Sientzoff
 # 2015/7/08
-# transform plin text to a sort of leet
+# transform plain text to a sort of leet
 
 # macth a regular char to a 133t one
 def char2leet( char ) :
