@@ -44,12 +44,18 @@ def compute_strength( password ) :
         strength += number + ( lenghtP - number )
     if repChar > 0 :
         strength -= repChar
+    # display details
+    # print( "Uppercase score :\t" + str( alphaUP + ( 2 * ( lenghtP - alphaUP ) ) ) )
+    # print( "Lowercase score :\t" + str( alphaLO + ( 2  * ( lenghtP - alphaLO ) ) ) )
+    # print( "Number score :\t" +  str( number + ( lenghtP - number ) ) )
+    # display total score
+    st = "Password strength : "
     if strength > 100 :
-        return "100% - Good password"
+        print st + "100% - Good password"
     elif strength < 0 :
-        return "0% - Weak password!"
-    return strength.__str__()  + "%"
+        print st + "0% - Weak password!"
+    print( st + strength.__str__()  + "%" )
 
 
 if __name__ == "__main__" :
-    print compute_strength( sys.argv[1] )
+    compute_strength( sys.argv[1] )

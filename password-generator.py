@@ -12,8 +12,8 @@ from leet import plain2leet
 def main( argv ) :
     dct = json.load( open( "words.json" ) )
     res = random.choice( dct['descriptive'] ) + " " + random.choice( dct['noums'] )
-    print res
-    print plain2leet( res )
+    print "Original string :\t" + res
+    print "Password :\t\t" + plain2leet( res )
 
 if __name__ == "__main__" :
     main( sys.argv )
