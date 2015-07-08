@@ -1,6 +1,8 @@
 # PythonYard
 Python programs I am coding to practice.
 
+**Be careful :**  password meter and generator are toys, so please be careful.
+
 ### List of items and purpose
 
  - `password-generator.py`: Original design to be a passwords generator, it
