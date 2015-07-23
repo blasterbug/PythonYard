@@ -29,8 +29,8 @@ def compute_strength( password ) :
         if char in string.digits :
             number += 1
         # compute icrement deduction base on prximity of repeated terms
-        divider = string.index( password, char ) - string.rindex( password, char )
-        charCount = string.count( password, char, deb )
+        divider = password.find( char ) - password.rfind( char )
+        charCount = password.count( char, deb )
         if divider > 0 :
             repInc += abs( charcount / divider )
         if charCount > 0 :
@@ -51,9 +51,9 @@ def compute_strength( password ) :
     # display total score
     st = "Password strength : "
     if strength > 100 :
-        print st + "100% - Good password"
+        print( st + "100% - Good password" )
     elif strength < 0 :
-        print st + "0% - Weak password!"
+        print( st + "0% - Weak password!" )
     print( st + strength.__str__()  + "%" )
 
 
