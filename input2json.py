@@ -12,7 +12,7 @@ def main( argv ) :
     argv.pop( 0 )
     # put the argv list in a json list
     jsdata = json.dumps( argv )
-    pprint( jsdata )
+    print( jsdata )
 
 if __name__ == "__main__" :
     main( sys.argv )
