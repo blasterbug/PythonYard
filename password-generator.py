@@ -14,9 +14,9 @@ def main( argv ) :
     dct = json.load( open( "words.json" ) )
     # `dict` is a dictionnary where `descriptive` and `noums` lists are stored
     res = random.choice( dct['descriptive'] ) + " " + random.choice( dct['noums'] )
-    print "Original string :\t" + res
-    print "Password :\t\t" + plain2leet( res )
+    print( "Original string :\t" + res )
+    print( "Password :\t\t" + plain2leet( res ) )
 
 if __name__ == "__main__" :
     main( sys.argv )
-    print "Consider uppercase letters to increase strenght and a 8 digits long password"
+    print( "Consider uppercase letters to increase strenght and a 8 digits long password" )
