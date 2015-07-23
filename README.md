@@ -13,4 +13,5 @@ Python programs I am coding to practice.
  - `words.json` : Store words in two categories, descriptive ones and noums.
  - `leet.py` : Module to play with a sort of leet (1337) language.
  - `passwordmeter.py`: Compute the strength of a password
+ - `input2json.py` : Read data from standard input and store it to a JSON file. __Not yet usable!__ 
  - More fun to come...
