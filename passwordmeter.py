@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Benjamin Sientzoff
 # 2015/7/08
-# Test and compute a password strength
+# Test and compute passwords strength
 # TODO: detect redundant pattern
 
 import sys
