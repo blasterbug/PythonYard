@@ -55,3 +55,8 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# tempory files
+tempory*
+tmp*
+*.tmp
