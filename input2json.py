@@ -10,12 +10,20 @@ import argparse
 # parser for CLI
 parser = argparse.ArgumentParser( description='Process some data to JSON file' )
 # adding some arguments
-parser.add_argument( '-o', '--ouput', help="Give a file name to store JSON ouputs", type=open, default='tempory.json' )
-parser.add_argument( '-i', '--input', help="The input file to process", type=open )
+output_objt = parser.add_argument( '-o', '--ouput',
+    help="Give a file name to store JSON ouputs",
+    type=argparse.FileType('w'),
+    default='tempory.json' )
 
-def main( filename, argv ) :
+parser.add_argument( '-i', '--input',
+    help="The input file to process",
+    type=argparse.FileType('r'),
+    required=True )
+
+# main i.e. do some processes
+def main( filename, inputfile ) :
     # put the argv list in a json list
-    jsdata = json.dumps( argv, indent=True )
+    jsdata = json.dumps( open( inputfile ), indent=True )
     # create a tempory file
     tmpfile = open( filename + ".json", "w")
     # store json data in file
@@ -25,13 +33,13 @@ def main( filename, argv ) :
     # close file
     tmpfile.close()
 
+# function called by default
 if __name__ == "__main__" :
     args = parser.parse_args()
-    print( args )
+    print( output_objt )
     try :
         filename = sys.argv.pop( 0 )
 
         #main( filename, sys.argv )
     except IndexError :
         print( "Give a filename", file=sys.stderr )
-#    print( "Finished shutdown." )
