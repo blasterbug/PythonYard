@@ -1,9 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# Benjamin Sientzoff
-# 2015/7/08
-# Test and compute passwords strength
-# TODO: detect redundant pattern
+"""
+Test and compute passwords strength
+TODO: detect redundant pattern
+"""
+__author__ = "Benjamin Sientzoff"
+__version__ = "0.1b"
+__maintainer__ = "Benjamin Sientzoff (blasterbug)"
+__license__ = "GNU GPL V2"
 
 import sys
 import string
