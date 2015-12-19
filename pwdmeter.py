@@ -5,7 +5,7 @@ Test and compute passwords strength
 TODO: detect redundant pattern
 """
 __author__ = "Benjamin Sientzoff"
-__version__ = "0.1b"
+__version__ = "0.2b"
 __maintainer__ = "Benjamin Sientzoff (blasterbug)"
 __license__ = "GNU GPL V2"
 
@@ -14,6 +14,11 @@ import string
 
 
 def compute_strength( password ) :
+    """
+    Compute the strength of a password
+    :param password: password to being tested
+    :return: strengh of the password
+    """
     alphaUP = 0
     alphaLO = 0
     number = 0
@@ -53,13 +58,15 @@ def compute_strength( password ) :
     # print( "Lowercase score :\t" + str( alphaLO + ( 2  * ( lenghtP - alphaLO ) ) ) )
     # print( "Number score :\t" +  str( number + ( lenghtP - number ) ) )
     # display total score
+    return strength
+
+
+if __name__ == "__main__" :
+    strength = compute_strength( sys.argv[1] )
     st = "Password strength : "
     if strength > 100 :
         print( st + "100% - Good password" )
     elif strength < 0 :
         print( st + "0% - Weak password!" )
-    print( st + strength.__str__()  + "%" )
-
-
-if __name__ == "__main__" :
-    compute_strength( sys.argv[1] )
+    else :
+        print( st + strength.__str__()  + "%" )
