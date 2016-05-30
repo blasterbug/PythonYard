@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Transform plain text to a sort of leet
-Th table below is used to perform the translation
+Transform plain text to a sort of leet.  
+The table below is used to perform the translation
+
 plain text | l33t
 -----------|------
     ' '    |  ''
@@ -12,10 +13,12 @@ plain text | l33t
     'e'    | '3'
     'i'    | '!'
     'l'    | '1'
-    'o'    | '0' 
+    'o'    | '0'
     's'    | '5'
     't'    | '7'
     'z'    | '2'
+
+
 """
 __author__ = "Benjamin Sientzoff"
 __version__ = "0.1b"

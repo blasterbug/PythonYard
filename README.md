@@ -14,4 +14,5 @@ Python programs I am coding to practice.
  - `leet.py` : Module to deal with a sort of leet (1337) language
  - `pwdmeter.py`: Compute the strength of a password (incomplete)
  - `input2json.py` : _Not yet usable!_ Transform data from standard input and store it to JSON
+ - `annuaire.py` : Read data from a plan text file and extract from it. I wrote it to turn data about the estate agencies companies into JSON.
  - More fun to come...
